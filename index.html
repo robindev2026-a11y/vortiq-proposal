@@ -319,11 +319,9 @@
             width: 44px;
             height: 44px;
             border-radius: 14px;
-            background: linear-gradient(145deg, #1231a8, #2358ff 50%, #00a6c8);
             display: grid;
             place-items: center;
             color: #fff;
-            box-shadow: inset 0 2px 2px rgba(255, 255, 255, .28), 0 14px 28px rgba(35, 88, 255, .28);
         }
 
         .logo-mark svg {
@@ -588,7 +586,7 @@
         /* Duration ladder */
         .duration-rail {
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 11px;
             align-items: stretch;
         }
@@ -1164,9 +1162,7 @@
                 transform: translateX(-50%);
             }
 
-            .duration-rail {
-                grid-template-columns: repeat(4, 1fr);
-            }
+
 
             .csp-roadmap {
                 grid-template-columns: repeat(3, 1fr);
@@ -1213,7 +1209,7 @@
             }
 
             .duration-rail {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
             }
 
             .csp-roadmap {
@@ -1269,7 +1265,7 @@
             }
 
             .duration-rail {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
             }
 
             .csp-roadmap {
@@ -1298,6 +1294,11 @@
 
             .hero {
                 padding: 18px;
+            }
+
+            .hero::before,
+            .hero::after {
+                opacity: 0.12;
             }
 
             .submitted {
@@ -2520,6 +2521,29 @@
                         skills, project confidence, internship readiness and career preparation through a flexible
                         partnership
                         model.</p>
+                    <div style="margin-top: 32px;">
+                        <span class="eyebrow" style="color:#ffc247; display:block; margin-bottom:12px;">Contact</span>
+                        <div class="contact-grid" style="grid-template-columns: 1fr; gap: 10px; margin-top: 0;">
+                            <div class="contact" style="padding: 10px 14px; background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .12);">
+                                <b style="font-size: 11px;">Sales</b>
+                                <span style="font-size: 13.5px; font-weight: 800; display: block; margin-top: 2px;">
+                                    <a href="mailto:sales@vortiqdynamics.com" style="color: inherit; text-decoration: underline;">sales@vortiqdynamics.com</a> &middot; 
+                                    <a href="tel:+917012655068" style="color: inherit; text-decoration: underline;">+91 70126 55068</a>
+                                </span>
+                            </div>
+                            <div class="contact" style="padding: 10px 14px; background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .12);">
+                                <b style="font-size: 11px;">Support</b>
+                                <span style="font-size: 13.5px; font-weight: 800; display: block; margin-top: 2px;">
+                                    <a href="mailto:support@vortiqdynamics.com" style="color: inherit; text-decoration: underline;">support@vortiqdynamics.com</a> &middot; 
+                                    <a href="tel:+919961237829" style="color: inherit; text-decoration: underline;">+91 99612 37829</a>
+                                </span>
+                            </div>
+                            <div class="contact" style="padding: 10px 14px; background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .12);">
+                                <b style="font-size: 11px;">Line</b>
+                                <span style="font-size: 13.5px; font-weight: 800; display: block; margin-top: 2px; color: rgba(255,255,255,0.7);">India / Global project delivery</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <form id="contact-form" onsubmit="event.preventDefault();" style="display:flex; flex-direction:column; gap:16px; margin-top:22px;">
@@ -2587,7 +2611,7 @@ Designation: ${desig}
 Email: ${email}
 Phone: ${phone}
 Website: ${web}`;
-                            const url = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                            const url = "mailto:sales@vortiqdynamics.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
                             window.location.href = url;
                         }
                     </script>
