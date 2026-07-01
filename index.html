@@ -1310,7 +1310,7 @@
             }
 
             .bar-row {
-                grid-template-columns: 72px 1fr 44px;
+                grid-template-columns: 70px 1fr 40px;
             }
 
             .callout h2 { font-size: 20px; }
@@ -1449,13 +1449,12 @@
     <div class="page">
 
         <header class="hero">
+            <img src="vortiq-logo-watermark.png" style="position:absolute; right:-60px; bottom:-60px; width:340px; opacity:0.06; z-index:0; pointer-events:none;">
             <div class="brand-row">
                 <div class="logo">
-                    <div class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none">
-                            <path d="M14 38C19 18 36 10 50 14C39 20 36 28 38 40C31 33 23 34 14 38Z" fill="white"
-                                opacity=".95" />
-                            <path d="M20 45C30 41 39 42 50 51C36 54 25 52 20 45Z" fill="white" opacity=".72" />
-                        </svg></div>
+                    <div class="logo-mark" aria-hidden="true">
+                        <img src="vortiq-logo-color.png" alt="Vortiq Dynamics" style="width:100%;height:100%;object-fit:contain;border-radius:14px;">
+                    </div>
                     <div>Vortiq Dynamics<br><span
                             style="font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.08em;text-transform:uppercase;">VUI
                             Partnership Proposal</span></div>
@@ -1680,32 +1679,102 @@
             </div>
         </section>
 
-        <section class="section white" id="program-durations">
+                <section class="section white" id="program-durations">
             <span class="eyebrow">Our Core Programs</span>
             <h2>Pick the commitment level that fits your department.</h2>
             <p class="lead">Every program below can run standalone or combine with internship and project-support add-ons &mdash; mix and match based on department goals, not a fixed package.</p>
-            <div class="duration-rail" style="margin-top:24px; grid-template-columns:repeat(4,1fr);">
+            <div class="duration-rail" style="margin-top:24px;">
                 <div class="duration">
                     <div class="label">Fast Track</div>
                     <div class="time">6 Months</div>
-                    <p>One semester-aligned skill track, single specialization, project output. Ideal for a focused department pilot.</p>
+                    <ul class="check-list" style="margin-top:12px; text-align:left; padding-left:0;">
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Single specialization deep-dive (Python/Web, Cloud, or Embedded)</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Practical labs + weekly assignments</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">One shipped mini-project</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Completion certificate</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Best for a focused department pilot</li>
+                    </ul>
                 </div>
                 <div class="duration">
                     <div class="label">Academic Year</div>
                     <div class="time">1 Year</div>
-                    <p>Two-semester program &mdash; foundations plus one applied specialization, project portfolio, placement-readiness support.</p>
+                    <ul class="check-list" style="margin-top:12px; text-align:left; padding-left:0;">
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Python + logic foundations</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Web fundamentals (Django) or chosen specialization</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Resume building + mock interviews</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Placement-readiness push</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">One portfolio-grade project</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Completion certificate + performance report</li>
+                    </ul>
                 </div>
                 <div class="duration">
                     <div class="label">Extended Track</div>
                     <div class="time">2 Years</div>
-                    <p>Full applied stack &mdash; web, mobile/cloud, specialization &mdash; with live-project mentorship and placement push.</p>
-                </div>
-                <div class="duration">
-                    <div class="label" style="display:flex; align-items:center; gap:8px;">CSP Ladder &middot; <span class="tag" style="background:linear-gradient(90deg, var(--rose), var(--orange)); color:#fff; border:none; padding:3px 8px; font-size:10px;">Recommended</span></div>
-                    <div class="time">3 Years</div>
-                    <p>The complete semester-synced ladder, foundations to placement &mdash; paced to fit B.Tech or Polytechnic length.</p>
+                    <ul class="check-list" style="margin-top:12px; text-align:left; padding-left:0;">
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Full web stack (Django) + Mobile or Cloud/DevOps track choice</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Live-project mentorship under working professionals</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Capstone-level build</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Interview prep + system design basics</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Placement push</li>
+                        <li style="font-size: 12.5px; margin: 6px 0; line-height: 1.35;">Industry certificate</li>
+                    </ul>
                 </div>
             </div>
+        </section>
+
+<section class="section white" id="internship">
+            <span class="eyebrow">Internship Model</span>
+            <h2>Support for college, department and official internship requirements.</h2>
+            <p class="lead">VUI internships can be structured for 2 weeks, 4 weeks, 6 weeks, 8 weeks or 1 month
+                depending on
+                the college requirement. The output can include practical assignments, project work, documentation,
+                certificate
+                and performance review.</p>
+            <div class="process" style="margin-top:24px;">
+                <div class="process-card">
+                    <h3>Plan</h3>
+                    <p>Define duration, batch size, student level and internship objective.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Train</h3>
+                    <p>Run mentor sessions and practical topic introduction.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Build</h3>
+                    <p>Students complete guided tasks, mini project or project module.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Document</h3>
+                    <p>Provide report format, project documentation and demo guidance.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Certify</h3>
+                    <p>Completion certificate, internship letter and performance report as required.</p>
+                </div>
+            </div>
+            <div class="grid four" style="margin-top:18px;">
+                <div class="card clay blue">
+                    <h3>Learning Internship</h3>
+                    <p>For beginners who need structured learning, guided tasks and a small output.</p>
+                </div>
+                <div class="card clay green">
+                    <h3>Project Internship</h3>
+                    <p>For intermediate students who can complete a project module or mini build.</p>
+                </div>
+                <div class="card clay">
+                    <h3>Industry Exposure</h3>
+                    <p>For short official college requirements needing practical exposure and documentation.</p>
+                </div>
+                <div class="card clay pink">
+                    <h3>Advanced Internship</h3>
+                    <p>For selected capable students who can take deeper project responsibility.</p>
+                </div>
+            </div>
+            <div class="note" style="margin-top:18px;"><b>Project exposure note:</b> Guided projects are provided for
+                eligible
+                internship batches. Real/internal project exposure may be offered to selected students based on
+                performance,
+                skill level and project availability.</div>
         </section>
 
         <section class="section" id="flexible-planning">
@@ -1792,61 +1861,6 @@
                     <div class="output"><b>Output:</b> Portfolio-grade project and interview preparation.</div>
                 </div>
             </div>
-        </section>
-
-        <section class="section white" id="internship">
-            <span class="eyebrow">Internship Model</span>
-            <h2>Support for college, department and official internship requirements.</h2>
-            <p class="lead">VUI internships can be structured for 2 weeks, 4 weeks, 6 weeks, 8 weeks or 1 month
-                depending on
-                the college requirement. The output can include practical assignments, project work, documentation,
-                certificate
-                and performance review.</p>
-            <div class="process" style="margin-top:24px;">
-                <div class="process-card">
-                    <h3>Plan</h3>
-                    <p>Define duration, batch size, student level and internship objective.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Train</h3>
-                    <p>Run mentor sessions and practical topic introduction.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Build</h3>
-                    <p>Students complete guided tasks, mini project or project module.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Document</h3>
-                    <p>Provide report format, project documentation and demo guidance.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Certify</h3>
-                    <p>Completion certificate, internship letter and performance report as required.</p>
-                </div>
-            </div>
-            <div class="grid four" style="margin-top:18px;">
-                <div class="card clay blue">
-                    <h3>Learning Internship</h3>
-                    <p>For beginners who need structured learning, guided tasks and a small output.</p>
-                </div>
-                <div class="card clay green">
-                    <h3>Project Internship</h3>
-                    <p>For intermediate students who can complete a project module or mini build.</p>
-                </div>
-                <div class="card clay">
-                    <h3>Industry Exposure</h3>
-                    <p>For short official college requirements needing practical exposure and documentation.</p>
-                </div>
-                <div class="card clay pink">
-                    <h3>Advanced Internship</h3>
-                    <p>For selected capable students who can take deeper project responsibility.</p>
-                </div>
-            </div>
-            <div class="note" style="margin-top:18px;"><b>Project exposure note:</b> Guided projects are provided for
-                eligible
-                internship batches. Real/internal project exposure may be offered to selected students based on
-                performance,
-                skill level and project availability.</div>
         </section>
 
         <section class="section" id="project-support">
@@ -1963,99 +1977,6 @@
             </div>
         </section>
 
-        <section class="section" id="csp">
-            <span class="eyebrow">CSP — B.Tech / 4-Year Engineering</span>
-            <h2>The long-term semester-synced learning ladder.</h2>
-            <p class="lead">CSP runs alongside college semesters and adds an applied industry layer. Semesters 3 and 4
-                stay
-                lighter and fundamentals-focused. Frameworks and advanced topics are introduced only when students are
-                ready to
-                build with them.</p>
-            <div class="csp-roadmap" style="margin-top:26px;">
-                <div class="sem">
-                    <div class="num">S3</div>
-                    <h3>Python, OOP & Logic</h3>
-                    <p>Python basics, classes, logic building, LeetCode Easy and OOP console project.</p>
-                    <div class="hrs">Light pace · ~32 hrs</div>
-                </div>
-                <div class="sem">
-                    <div class="num">S4</div>
-                    <h3>SQL/NoSQL & DSA</h3>
-                    <p>SQL, MongoDB basics, applied DSA and DB-backed mini project.</p>
-                    <div class="hrs">Light pace · ~32 hrs</div>
-                </div>
-                <div class="sem">
-                    <div class="num">S5</div>
-                    <h3>Web + Django</h3>
-                    <p>HTML, CSS, JavaScript, Django, REST basics and CRUD web app.</p>
-                    <div class="hrs">Full pace · ~48 hrs</div>
-                </div>
-                <div class="sem">
-                    <div class="num">S6</div>
-                    <h3>Mobile or Cloud</h3>
-                    <p>Track choice: Flutter/mobile development or cloud and DevOps basics.</p>
-                    <div class="hrs">Full pace · ~48 hrs</div>
-                </div>
-                <div class="sem">
-                    <div class="num">S7</div>
-                    <h3>Specialization + Capstone</h3>
-                    <p>Advanced track, ecommerce-level capstone, system design and review. Includes agentic-tool exposure as part of the specialization workflow.</p>
-                    <div class="hrs">Full pace · ~48 hrs</div>
-                </div>
-                <div class="sem">
-                    <div class="num">S8</div>
-                    <h3>Placement Push</h3>
-                    <p>Mock interviews, resume/GitHub polish, portfolio and career readiness. AI-assisted dev workflow practice integrated into interview prep.</p>
-                    <div class="hrs">Full pace · ~48 hrs</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="polytechnic">
-            <span class="eyebrow">Polytechnic Fast-Track</span>
-            <h2>Semesters 3&ndash;6, compressed for the 3-year diploma.</h2>
-            <p class="lead">Semesters 1&ndash;2 stay untouched &mdash; students are fresh, and the official Problem-Solving course handles onboarding. CSP starts at Semester 3 because Semesters 1&ndash;2 are excluded &mdash; that leaves exactly four semesters (3&ndash;6) to work with, compressed from the six-stage B.Tech ladder. Within those four, we don&rsquo;t re-teach what the diploma syllabus already covers &mdash; every hour goes into depth and shipped, practical output.</p>
-            <div class="grid four" style="margin-top:26px;">
-
-                <div class="card">
-                    <span class="tag blue">Sem 3</span>
-                    <h3>Python, OOP &amp; Data Fundamentals</h3>
-                    <p style="font-size:13px; color:var(--muted); margin:10px 0 4px;"><strong>College covers:</strong> C programming, Computer Organisation, DBMS theory, Digital Computer Fundamentals.</p>
-                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>We go deep on:</strong> practical Python (the language actually used in product companies), real OOP design patterns, applied DSA problem-solving, hands-on SQL/NoSQL on a real database-backed build.</p>
-                    <div class="output"><b>Output:</b> Python + DB-backed mini project, applied problem-set practice, portfolio-ready.</div>
-                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~48 hrs &middot; placeholder, pending scheduling review</div>
-                </div>
-
-                <div class="card">
-                    <span class="tag green">Sem 4</span>
-                    <h3>Web + Mobile/Cloud, Full Build</h3>
-                    <p style="font-size:13px; color:var(--muted); margin:10px 0 4px;"><strong>College covers:</strong> OOP, Data Structures, Networks, Web Programming Lab.</p>
-                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>We go deep on:</strong> shipping a full Django web app, then a mobile build (Flutter) or a cloud/DevOps deployment pipeline &mdash; student&rsquo;s choice.</p>
-                    <div class="output"><b>Output:</b> Deployed web app, live URL, mobile or cloud extension.</div>
-                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~64 hrs &middot; placeholder, pending scheduling review</div>
-                </div>
-
-                <div class="card">
-                    <span class="tag orange">Sem 5</span>
-                    <h3>Live Projects Under Working Professionals</h3>
-                    <p style="font-size:13px; color:var(--muted); margin:10px 0 4px;"><strong>College covers:</strong> AI, OS, specialization electives (Cloud/Security/Embedded).</p>
-                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>We go deep on:</strong> real live project work, under a working professional mentor, with actual deadlines &mdash; applying whatever elective they picked to a shipped task. Team discipline and industry pace, not more syntax.</p>
-                    <div class="output"><b>Output:</b> Real project task history, Major Project mentorship begins.</div>
-                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~40 hrs &middot; placeholder, live-project hours vary by placement</div>
-                </div>
-
-                <div class="card">
-                    <span class="tag purple">Sem 6</span>
-                    <h3>Branch &mdash; Placement or Internship</h3>
-                    <p style="font-size:13px; color:var(--muted); margin:10px 0 8px;"><strong>Normal Pathway &rarr;</strong> Capstone completion, resume/portfolio, mock interviews, system design basics.</p>
-                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>Internship Pathway &rarr;</strong> Direct transition into Vortiq&rsquo;s internship track, scoped to the official multi-month requirement &mdash; duration and terms finalized with the department based on cohort size and mentor availability.</p>
-                    <div class="output"><b>Two official routes, one program covers both.</b></div>
-                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~56 hrs &middot; placeholder, pending scheduling review</div>
-                </div>
-
-            </div>
-        </section>
-
         <section class="section" id="formats">
             <span class="eyebrow">Program Formats</span>
             <h2>Engagement models from one day to a complete learning ladder.</h2>
@@ -2136,6 +2057,99 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+
+        <section class="section" id="csp">
+            <span class="eyebrow">CSP — B.Tech / 4-Year Engineering</span>
+            <h2>The long-term semester-synced learning ladder.</h2>
+            <p class="lead">CSP runs alongside college semesters and adds an applied industry layer. Semesters 3 and 4
+                stay
+                lighter and fundamentals-focused. Frameworks and advanced topics are introduced only when students are
+                ready to
+                build with them.</p>
+            <div class="csp-roadmap" style="margin-top:26px;">
+                <div class="sem">
+                    <div class="num">S3</div>
+                    <h3>Python, OOP & Logic</h3>
+                    <p>Python basics, classes, logic building, LeetCode Easy and OOP console project.</p>
+                    <div class="hrs">Light pace · ~32 hrs</div>
+                </div>
+                <div class="sem">
+                    <div class="num">S4</div>
+                    <h3>SQL/NoSQL & DSA</h3>
+                    <p>SQL, MongoDB basics, applied DSA and DB-backed mini project.</p>
+                    <div class="hrs">Light pace · ~32 hrs</div>
+                </div>
+                <div class="sem">
+                    <div class="num">S5</div>
+                    <h3>Web + Django</h3>
+                    <p>HTML, CSS, JavaScript, Django, REST basics and CRUD web app.</p>
+                    <div class="hrs">Full pace · ~48 hrs</div>
+                </div>
+                <div class="sem">
+                    <div class="num">S6</div>
+                    <h3>Mobile or Cloud</h3>
+                    <p>Track choice: Flutter/mobile development or cloud and DevOps basics.</p>
+                    <div class="hrs">Full pace · ~48 hrs</div>
+                </div>
+                <div class="sem">
+                    <div class="num">S7</div>
+                    <h3>Specialization + Capstone</h3>
+                    <p>Advanced track, ecommerce-level capstone, system design and review. Includes agentic-tool exposure as part of the specialization workflow.</p>
+                    <div class="hrs">Full pace · ~48 hrs</div>
+                </div>
+                <div class="sem">
+                    <div class="num">S8</div>
+                    <h3>Placement Push</h3>
+                    <p>Mock interviews, resume/GitHub polish, portfolio and career readiness. AI-assisted dev workflow practice integrated into interview prep.</p>
+                    <div class="hrs">Full pace · ~48 hrs</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="polytechnic">
+            <span class="eyebrow">Polytechnic Fast-Track</span>
+            <h2>Semesters 3&ndash;6, compressed for the 3-year diploma.</h2>
+            <p class="lead">Semesters 3&ndash;6, compressed for the 3-year diploma. Every hour goes into practical depth beyond what your syllabus already covers &mdash; no re-teaching, no filler.</p>
+            <div class="grid four" style="margin-top:26px;">
+
+                <div class="card">
+                    <span class="tag blue">Sem 3</span>
+                    <h3>Python, OOP &amp; Data Fundamentals</h3>
+                    <p style="font-size:13px; color:var(--muted); margin:10px 0 4px;"><strong>College covers:</strong> C programming, Computer Organisation, DBMS theory, Digital Computer Fundamentals.</p>
+                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>We go deep on:</strong> practical Python (the language actually used in product companies), real OOP design patterns, applied DSA problem-solving, hands-on SQL/NoSQL on a real database-backed build.</p>
+                    <div class="output"><b>Output:</b> Python + DB-backed mini project, applied problem-set practice, portfolio-ready.</div>
+                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~48 hrs</div>
+                </div>
+
+                <div class="card">
+                    <span class="tag green">Sem 4</span>
+                    <h3>Web + Mobile/Cloud, Full Build</h3>
+                    <p style="font-size:13px; color:var(--muted); margin:10px 0 4px;"><strong>College covers:</strong> OOP, Data Structures, Networks, Web Programming Lab.</p>
+                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>We go deep on:</strong> shipping a full Django web app, then a mobile build (Flutter) or a cloud/DevOps deployment pipeline &mdash; student&rsquo;s choice.</p>
+                    <div class="output"><b>Output:</b> Deployed web app, live URL, mobile or cloud extension.</div>
+                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~64 hrs</div>
+                </div>
+
+                <div class="card">
+                    <span class="tag orange">Sem 5</span>
+                    <h3>Live Projects Under Working Professionals</h3>
+                    <p style="font-size:13px; color:var(--muted); margin:10px 0 4px;"><strong>College covers:</strong> AI, OS, specialization electives (Cloud/Security/Embedded).</p>
+                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>We go deep on:</strong> real live project work, under a working professional mentor, with actual deadlines &mdash; applying whatever elective they picked to a shipped task. Team discipline and industry pace, not more syntax.</p>
+                    <div class="output"><b>Output:</b> Real project task history, Major Project mentorship begins.</div>
+                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~40 hrs</div>
+                </div>
+
+                <div class="card">
+                    <span class="tag purple">Sem 6</span>
+                    <h3>Branch &mdash; Placement or Internship</h3>
+                    <p style="font-size:13px; color:var(--muted); margin:10px 0 8px;"><strong>Normal Pathway &rarr;</strong> Capstone completion, resume/portfolio, mock interviews, system design basics.</p>
+                    <p style="font-size:13px; color:var(--muted); margin-bottom:12px;"><strong>Internship Pathway &rarr;</strong> Direct transition into Vortiq&rsquo;s internship track, scoped to the official multi-month requirement &mdash; duration and terms finalized with the department based on cohort size and mentor availability.</p>
+                    <div class="output"><b>Two official routes, one program covers both.</b></div>
+                    <div class="hrs" style="position:static; margin-top:14px; border-radius:12px;">~56 hrs</div>
+                </div>
+
             </div>
         </section>
 
@@ -2508,13 +2522,75 @@
                         model.</p>
                 </div>
                 <div>
-                    <div class="contact-grid">
-                        <div class="contact"><b>Name</b><span>[Your Name]</span></div>
-                        <div class="contact"><b>Designation</b><span>[Designation]</span></div>
-                        <div class="contact"><b>Email</b><span>[Email]</span></div>
-                        <div class="contact"><b>Phone</b><span>[Phone]</span></div>
-                        <div class="contact"><b>Website</b><span>[Website]</span></div>
-                    </div>
+                    <form id="contact-form" onsubmit="event.preventDefault();" style="display:flex; flex-direction:column; gap:16px; margin-top:22px;">
+                        <div class="contact-grid" style="margin-top:0;">
+                            <div class="contact">
+                                <b>Name</b>
+                                <input type="text" id="form-name" placeholder="Your Name" style="width: 100%; background: transparent; border: none; color: #fff; font-size: 13px; font-weight: 850; outline: none; margin-top: 4px; font-family: inherit;">
+                            </div>
+                            <div class="contact">
+                                <b>Designation</b>
+                                <input type="text" id="form-designation" placeholder="Designation" style="width: 100%; background: transparent; border: none; color: #fff; font-size: 13px; font-weight: 850; outline: none; margin-top: 4px; font-family: inherit;">
+                            </div>
+                            <div class="contact">
+                                <b>Email</b>
+                                <input type="email" id="form-email" placeholder="Email Address" style="width: 100%; background: transparent; border: none; color: #fff; font-size: 13px; font-weight: 850; outline: none; margin-top: 4px; font-family: inherit;">
+                            </div>
+                            <div class="contact">
+                                <b>Phone</b>
+                                <input type="tel" id="form-phone" placeholder="Phone Number" style="width: 100%; background: transparent; border: none; color: #fff; font-size: 13px; font-weight: 850; outline: none; margin-top: 4px; font-family: inherit;">
+                            </div>
+                            <div class="contact">
+                                <b>Website</b>
+                                <input type="text" id="form-website" placeholder="Website" style="width: 100%; background: transparent; border: none; color: #fff; font-size: 13px; font-weight: 850; outline: none; margin-top: 4px; font-family: inherit;">
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                            <button type="button" onclick="sendWhatsApp()" style="flex:1; min-width:180px; padding:12px; border-radius:14px; border:none; background: #25d366; color:#fff; font-weight:800; font-size:13.5px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; box-shadow:0 8px 20px rgba(37,211,102,0.25); transition:transform 0.2s;">
+                                💬 Send via WhatsApp
+                            </button>
+                            <button type="button" onclick="sendEmail()" style="flex:1; min-width:180px; padding:12px; border-radius:14px; border:1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color:#fff; font-weight:800; font-size:13.5px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; backdrop-filter:blur(10px); transition:all 0.2s;">
+                                ✉️ Send via Email
+                            </button>
+                        </div>
+                    </form>
+                    <script>
+                        function sendWhatsApp() {
+                            const name = document.getElementById('form-name').value || '[Not Specified]';
+                            const desig = document.getElementById('form-designation').value || '[Not Specified]';
+                            const email = document.getElementById('form-email').value || '[Not Specified]';
+                            const phone = document.getElementById('form-phone').value || '[Not Specified]';
+                            const web = document.getElementById('form-website').value || '[Not Specified]';
+                            
+                            const text = `VUI Partnership Inquiry:
+
+Name: ${name}
+Designation: ${desig}
+Email: ${email}
+Phone: ${phone}
+Website: ${web}`;
+                            const url = "https://wa.me/917012655068?text=" + encodeURIComponent(text);
+                            window.open(url, '_blank');
+                        }
+                        function sendEmail() {
+                            const name = document.getElementById('form-name').value || '[Not Specified]';
+                            const desig = document.getElementById('form-designation').value || '[Not Specified]';
+                            const email = document.getElementById('form-email').value || '[Not Specified]';
+                            const phone = document.getElementById('form-phone').value || '[Not Specified]';
+                            const web = document.getElementById('form-website').value || '[Not Specified]';
+                            
+                            const subject = "VUI Partnership Inquiry";
+                            const body = `VUI Partnership Inquiry:
+
+Name: ${name}
+Designation: ${desig}
+Email: ${email}
+Phone: ${phone}
+Website: ${web}`;
+                            const url = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                            window.location.href = url;
+                        }
+                    </script>
                 </div>
             </div>
         </footer>
